@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f9f47091-2b4b-4439-85e7-4ce8603f9719" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1WWMDIipCaTASa5oocVlWCpmRn1" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ideaProject\喜鹊儿(青果系统)_加密参数封装\src\cn\xinidi\api\encodeing" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="喜鹊儿(青果系统)_接口封装" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f9f47091-2b4b-4439-85e7-4ce8603f9719" name="Default Changelist" comment="" />
+      <created>1579260776599</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579260776599</updated>
+      <workItem from="1579260778905" duration="411000" />
+      <workItem from="1579261989392" duration="2344000" />
+      <workItem from="1579264635657" duration="2302000" />
+      <workItem from="1579317253402" duration="268000" />
+      <workItem from="1579318535490" duration="14250000" />
+      <workItem from="1579351033470" duration="269000" />
+      <workItem from="1579352185097" duration="32000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="77" key="#Project_Structure" timestamp="1579266314106">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="77" key="#Project_Structure/0.0.1536.834@0.0.1536.834" timestamp="1579266314106" />
+    <state x="223" y="74" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579263397146">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="223" y="74" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1579263397146" />
+    <state x="574" y="135" key="#com.intellij.ide.util.MemberChooser" timestamp="1579330856721">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="574" y="135" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1579330856721" />
+    <state x="599" y="112" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1579266310707">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="599" y="112" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1536.834@0.0.1536.834" timestamp="1579266310707" />
+    <state x="499" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579323792907">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="499" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1579323792907" />
+    <state x="445" y="159" key="FileChooserDialogImpl" timestamp="1579266305787">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="445" y="159" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1579266305787" />
+    <state width="1493" height="197" key="GridCell.Tab.0.bottom" timestamp="1579350969458">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="197" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1579350969458" />
+    <state width="1493" height="197" key="GridCell.Tab.0.center" timestamp="1579350969457">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="197" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1579350969457" />
+    <state width="1493" height="197" key="GridCell.Tab.0.left" timestamp="1579350969457">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="197" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1579350969457" />
+    <state width="1493" height="197" key="GridCell.Tab.0.right" timestamp="1579350969458">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="197" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1579350969458" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1579266366295">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1579266366295" />
+    <state x="449" y="243" key="com.intellij.ide.util.TipDialog" timestamp="1579352184204">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="449" y="243" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1579352184204" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1579329515161">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1579329515161" />
+  </component>
+</project>

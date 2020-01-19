@@ -14,7 +14,7 @@ public class Main {
         List<SchoolListJSON> list = Apis.getSchoolList(Info.URLS.getSchoolListParams());
 
         //登录
-        String loginParams = Info.URLS.getLoginParams("13589", null, null, null, "20180551119", "tyggi159");
+        String loginParams = Info.URLS.getLoginParams("13589", null, null, null, "20180551119", "密码");
         UserJSON userJSON = Apis.login(loginParams);
 
         //取课表

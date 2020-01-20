@@ -121,7 +121,7 @@ public class EncodeAPI {
                 s3 = string2;
                 if (n3 > length) break;
                 int n4 = i * length + n3;
-                String string3 = "000" + (Integer.valueOf(toArray(string.substring(n4 - 1, n4))) + Integer.valueOf(toArray(s.substring(n3 - 1, n3))) + n2 * 6 % length);
+                String string3 = "000" + (Integer.parseInt(toArray(string.substring(n4 - 1, n4))) + Integer.parseInt(toArray(s.substring(n3 - 1, n3))) + n2 * 6 % length);
                 string2 += string3.substring(string3.length() - 3);
                 if (n4 == length2) {
                     s3 = string2;
@@ -142,7 +142,7 @@ public class EncodeAPI {
             }
             s = string2.substring(n5, length3);
             n5 += 9;
-            s = "000000" + a(Long.valueOf(s));
+            s = "000000" + a(Long.parseLong(s));
             s = s.substring(s.length() - 6);
             string += s;
         }

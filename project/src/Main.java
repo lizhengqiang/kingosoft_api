@@ -11,21 +11,30 @@ public class Main {
     public static void main(String[] args) {
 
         //学校列表
-        List<SchoolListJSON> list = Apis.getSchoolList(Info.URLS.getSchoolListParams());
+        //List<SchoolListJSON> list = Apis.getSchoolList(Info.URLS.getSchoolListParams());
 
         //登录
-        String loginParams = Info.URLS.getLoginParams("13589", null, null, null, "20180551119", "tyggi159");
+        String loginParams = Info.URLS.getLoginParams("13589", null, null, null, "20180551119", "密码");
         UserJSON userJSON = Apis.login(loginParams);
+        //System.out.println(userJSON);
 
         //取课表
-        String courseParams = Info.URLS.getCourseParams("", "", "15", "20190", userJSON);
-        //System.out.println(courseParams);
+        /*String courseParams = Info.URLS.getCourseParams("", "", "15", "20190", userJSON);
         try {
             String course = Apis.common(Info.URLS.URL, courseParams, userJSON.getToken());
             System.out.println(course);
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
+
+        //取成绩
+        /*String gradeParams = Info.URLS.getGradeParams("1","20190",userJSON);
+        try {
+            String grade = Apis.common(Info.URLS.URL, gradeParams, userJSON.getToken());
+            System.out.println(grade);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }*/
 
 
     }

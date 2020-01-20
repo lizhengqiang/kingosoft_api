@@ -99,6 +99,7 @@ public class Info {
 
             if (week == null || "".equals(week.trim())) return null;
             if (xnxq == null || "".equals(xnxq.trim())) return null;
+            if (userJSON == null) return null;
             //if (userJSON == null) return null;
 
             //参数列表顺序需要强行如下，不能更改
@@ -117,6 +118,36 @@ public class Info {
 
             return buffer.toString();
         }
+
+        /**
+         * 取成绩
+         *
+         * @param flag     flag可取[0,1]两个值，分别代表[原始成绩,有效成绩]
+         * @param xnxq     学年学期,由 [年份+学期] 构成,例1:20200 --第一学期，列2:20201 --第二学期
+         * @param userJSON 该对象由登录后封装而来，详情请看{@linkplain cn.xinidi.Apis#login 登录接口},对象结构请看{@link UserJSON}
+         * @return 组合后的参数
+         */
+        public static String getGradeParams(String flag, String xnxq, UserJSON userJSON) {
+
+            flag = (flag == null || flag.trim().equals("")) ? "0" : flag;
+            if (xnxq == null || "".equals(xnxq.trim())) return null;
+            if (userJSON == null) return null;
+
+            //强制排列
+            StringBuffer buffer = new StringBuffer();
+            buffer.append("flag=").append(flag).append("&");
+            buffer.append("xnxq=").append(xnxq).append("&");
+            buffer.append("action=getStucj&");
+            buffer.append("usertype=").append(userJSON.getUserType()).append("&");
+            buffer.append("step=detail&");
+            buffer.append("userId=").append(userJSON.getUserId()).append("&");
+            buffer.append("sfid=").append(userJSON.getUserId()).append("&");
+            buffer.append("uuid=").append(userJSON.getUuid());
+
+            return buffer.toString();
+        }
+
+
     }
 
 }

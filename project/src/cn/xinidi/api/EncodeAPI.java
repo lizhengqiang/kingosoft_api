@@ -1,5 +1,7 @@
 package cn.xinidi.api;
 
+import cn.xinidi.model.UserJSON;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -49,6 +51,22 @@ public class EncodeAPI {
         hashMap.put("token", token);
         return hashMap;
     }
+
+    /**
+     * 该方法用作于喜鹊儿内嵌webview访问的加密
+     *
+     * @param str  参数一
+     * @param str2 参数二
+     * @return
+     */
+    public static String webEncodeing(String str, String str2) {
+        try {
+            return "param=" + getParamEncode(str, str2) + "&param2=" + getParam2Encode(str);
+        } catch (Exception e) {
+            return "param=error&param2=error";
+        }
+    }
+
 
     /**
      * 加密参数的方法
@@ -159,7 +177,7 @@ public class EncodeAPI {
         String[] split = GMd5.md5(str).split("");
 
         //可能是java的版本原因，也可能是系统的原因 linux 与 window 符号长度的原因，在手机端aide上 split[0] 应该是一个空白字符
-        if ( !("".equals(split[0].trim())) ) {
+        if (!("".equals(split[0].trim()))) {
             String[] tmp = new String[split.length + 1];
             tmp[0] = "";
             for (int i = 0; i < split.length; i++) {

@@ -10,9 +10,11 @@ import com.alibaba.fastjson.JSONObject;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 /**
  * 请求的部分api
+ *
  * @author Gang
  */
 public class Apis {
@@ -23,9 +25,9 @@ public class Apis {
      * @param schoolListParams 请求参数，具体请看{@link Info.URLS#getSchoolListParams}
      * @return List\<{@linkplain SchoolListJSON SchoolListJSON}\>
      */
-    public static List<SchoolListJSON> getSchoolList(String schoolListParams) {
+    public static List<SchoolListJSON> schoolList(String schoolListParams) {
         try {
-            String jsonString = common(Info.URLS.URL,schoolListParams,"");
+            String jsonString = common(Info.URLS.URL, schoolListParams, "");
             List<SchoolListJSON> list = JSON.parseArray(jsonString, SchoolListJSON.class);
             /*for (SchoolListJSON s : list) {
                 System.out.println(s.toString());
@@ -47,7 +49,7 @@ public class Apis {
      */
     public static UserJSON login(String loginParams) {
         try {
-            String jsonString = common(Info.URLS.URL,loginParams,"");
+            String jsonString = common(Info.URLS.URL, loginParams, "");
             //System.out.println(jsonString);
 
             JSONObject jsonObject = JSON.parseObject(jsonString);
@@ -71,15 +73,32 @@ public class Apis {
 
     /**
      * 封装的通用请求方法
-     * @param url       请求地址
-     * @param params    请求参数,具体请看{@link Info.URLS}
-     * @param token     请求token,默认是 00000 会在登录后返回{@link UserJSON#getToken()}
-     * @return          返回一个String格式的html文本
+     *
+     * @param url    请求地址
+     * @param params 请求参数,具体请看{@link Info.URLS}
+     * @param token  请求token,默认是 00000 会在登录后返回{@link UserJSON#getToken()}
+     * @return 返回一个String格式的html文本
      * @throws IOException
      */
-    public static String common(String url,String params,String token) throws IOException {
-        NetUtil netUtil = NetUtil.post(url,EncodeAPI.encodeing(params,token));
+    public static String common(String url, String params, String token) throws IOException {
+        Map<String, String> map = EncodeAPI.encodeing(params, token);
+        NetUtil netUtil = NetUtil.post(url, map);
 
         return netUtil.getHTMLText();
     }
+
+    /**
+     * 内嵌webview通用请求方法
+     * @param url   请求地址
+     * @param params    请求参数{请求参数,具体请看{@link Info.URLS#getWebCommParams}}
+     * @return
+     * @throws IOException
+     */
+    public static String webCommon(String url, String params) throws IOException {
+        NetUtil netUtil = NetUtil.get(url,params);
+
+        return netUtil.getHTMLText();
+    }
+
+
 }

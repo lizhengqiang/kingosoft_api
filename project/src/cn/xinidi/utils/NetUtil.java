@@ -5,6 +5,9 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
 import java.io.IOException;
+import java.net.URLEncoder;
+import java.security.URIParameter;
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -35,6 +38,7 @@ public class NetUtil {
 
     /**
      * post请求方式
+     *
      * @param url
      * @param param
      * @return
@@ -44,6 +48,24 @@ public class NetUtil {
         Connection conn = Jsoup.connect(url);
         conn.method(Connection.Method.POST);
         conn.data(param);
+
+        NetUtil netUtil = new NetUtil();
+        netUtil.response = conn.execute();
+
+        return netUtil;
+    }
+
+    /**
+     * get请求方式
+     *
+     * @param url
+     * @param param
+     * @return
+     * @throws IOException
+     */
+    public static NetUtil get(String url, String param) throws IOException {
+        Connection conn = Jsoup.connect(url + "?" + param);
+        conn.method(Connection.Method.GET);
 
         NetUtil netUtil = new NetUtil();
         netUtil.response = conn.execute();

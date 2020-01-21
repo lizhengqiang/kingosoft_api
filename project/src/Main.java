@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
 
         //学校列表
-        //List<SchoolListJSON> list = Apis.getSchoolList(Info.URLS.getSchoolListParams());
+        //List<SchoolListJSON> list = Apis.schoolList(Info.URLS.getSchoolListParams());
 
         //登录
         String loginParams = Info.URLS.getLoginParams("13589", null, null, null, "20180551119", "密码");
@@ -36,6 +36,58 @@ public class Main {
             e.printStackTrace();
         }*/
 
+        //学情警示
+        /*String param = Info.URLS.getWebCommParams(userJSON, "xqjs", "list");
+        try {
+            String s = Apis.webCommon(Info.URLS.URL_WEBVIEW, param);
+            System.out.println(s);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }*/
 
+        //培养方案
+        /*String param = Info.URLS.getWebCommParams(userJSON, "pyfa", "list");
+        try {
+            String s = Apis.webCommon(Info.URLS.URL_WEBVIEW, param);
+            System.out.println(s);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }*/
+
+        //等级考试成绩
+        /*String param = Info.URLS.getWebCommParams(userJSON, "djkscj", "detail");
+        try {
+            String s = Apis.webCommon(Info.URLS.URL_WEBVIEW, param);
+            System.out.println(s);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }*/
+
+        //成绩分布
+        /*String param = Info.URLS.getWebCommParams(userJSON, "cjfb", "list");
+        try {
+            String s = Apis.webCommon(Info.URLS.URL_WEBVIEW, param);
+            System.out.println(s);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }*/
+
+        //重修查询
+        /*String param = Info.URLS.getWebCommParams(userJSON, "cxcx", "detail");
+        try {
+            String s = Apis.webCommon(Info.URLS.URL_WEBVIEW, param);
+            System.out.println(s);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }*/
+
+        //作息时间
+        /*String param = Info.URLS.getWebCommParams(userJSON, "zxsj", "detail");
+        try {
+            String s = Apis.webCommon(Info.URLS.URL_WEBVIEW, param);
+            System.out.println(s);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }*/
     }
 }

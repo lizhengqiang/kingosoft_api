@@ -1,5 +1,7 @@
 ## 喜鹊儿APP(青果系统)_接口封装
 
+**如果网络连接太慢，** [码云](https://gitee.com/GangJust/kingosoft_api "码云")
+
 该项目是基于 [xiqueer](https://github.com/GangJust/xiqueer "xiqueer") 封装的。
 
 emm……该项目目前仅仅是实现了部分接口,如果需要更多实现可以借助上述项目，自己实现。

@@ -8,6 +8,38 @@
     <script src="./kingosoft-api.js"></script>
 </head>
 <body>
+
+<script>
+
+/// "http://www.xiqueer.com:8080/manager/wap/wapController.jsp"; //请求接口
+/// "http://www.xiqueer.com:8080/manager/wap/jwApi.jsp"; //内嵌web请求接口
+
+var loginParams = 'xxdm=13589&sjxh=MI 8&loginId=20180551119&sswl=55555&os=android&xtbb=10&appver=android2.5.101&action=getLoginInfoNew&isky=1&sjbz=&pwd=密码&loginmode=0';
+var loginParams1 = ParamUtils.getLoginParams('13589', 'MI 8', 'android', '10', '20180551119', '密码');
+var map = EncodeUtil.encodeing(loginParams, '00000'); //登录参数加密，方法1
+var map1 = EncodeUtil.encodeing(loginParams1, '00000'); //登录参数加密,方法2
+console.log('登录参数加密，方法1,样例 --- ', map);
+console.log('登录参数加密,方法2,样例 --- ', map1);
+var userJSONStr = '{"xqzhstate":"0","jw":"1.21","xqdlzh":"20180551119","xqzh":"c4361547490477160628a","xkljms":"0","xm":"余刚","userid":"13589_20180551119","pcurl":"http://www.xiqueer.com:80/pc/","usertype":"STU","imurl":"47.104.81.149:21000","xz":"0","msg":"通过身份验证！","flag":"0","token":"2p46r21yx2l41zim1n203x0s1yx1t522hkcs1luoyx2sot5b20pdej1yxb2j21wa5m1yx8r420pb38","ispay":"FALSE","serviceurl":"http://www.xiqueer.com:8080/manager/","uuid":"c2761547490477160528","rzfs":"教务","grantmodule":"教务;","imfs":"jiguang","kbbzrel":"1","xxdm":"13589","xxmc":"重庆师范大学涉外商贸学院","moduleVerInfo":[{"moduleversion":"02","modulecode":"jw","ver":"1.21"},{"moduleversion":"01","modulecode":"mh","ver":"0"},{"moduleversion":"","modulecode":"rl","ver":""},{"moduleversion":"","modulecode":"oa","ver":"0"},{"moduleversion":"","modulecode":"sx","ver":""},{"moduleversion":"","modulecode":"su","ver":""},{"moduleversion":"","modulecode":"ky","ver":""}]}';
+var userJSON = JSON.parse(userJSONStr);
+console.log('登录成功后，返回json样例 --- ', userJSON);
+var courseParams = ParamUtils.getCourseParams("", "", "2", "20191", userJSON);
+var courseMap = EncodeUtil.encodeing(courseParams, userJSON['token']); //登录参数加密,方法2
+console.log('获取课表参数加密，样例 --- ', courseMap);
+var str1 = EncodeUtil.webEncodeing(userJSON, 'pyfa', 'list'); //查看培养方案
+console.log('内嵌web请求加密参数,样例 --- ', str1);
+/**
+ * 目前仅封装了
+ * --取学校列表
+ * --登录
+ * --取课表
+ * 需要更多接口，请参照项目所带修改后显toast的app(如果app提示更新，请联系我。)
+ * 调用方法
+ *      --- EncodeUtil.encodeing(参数列表,token)
+ *      --- EncodeUtil.webEncodeing(通过 JSON.parse 解析后的登录成功返回json,行为,方式)
+ * */ 
+
+</script>
     
 </body>
 </html>

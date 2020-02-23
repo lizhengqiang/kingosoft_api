@@ -1,6 +1,6 @@
 ## 喜鹊儿APP(青果系统)_接口封装
 
-该项目是基于 [xiqueer](https://github.com/GangJust/xiqueer "xiqueer") 封装的。
+该项目是基于 [xiqueer](https://gitee.com/GangJust/xiqueer "xiqueer") 封装的。
 
 emm……该项目目前仅仅是实现了部分接口,如果需要更多实现可以借助上述项目，自己实现。
 
